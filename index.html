@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Portfolio Julian Murgic</title>
+  </head>
+  
+  <body class="overflow">
+<!--navbar-->
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Julian Murgic</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Julian Murgic</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobremi.html">Sobre mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="proyectos.html">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+  <!-- HERO -->
+    <section class="video">
+
+        <!-- Video de fondo -->
+        <video autoplay muted loop playsinline class="video-bg">
+            <source src="img/videoplayback.mp4" type="video/mp4">
+        </video>
+
+        <div class="overlay"></div>
+
+        <div class="textovideo">
+            <h1>Julian Murgic</h1>
+            <p>Diseñador Multimedial</p>
+        </div>
+
+    </section>
+
+  <!-- SOBRE -->
+<section id="sobre" class="sobre">
+
+    <div class="container-sobre">
+
+        <div class="texto">
+            <h2>Sobre mí</h2>
+            <p>
+                Diseñador multimedial enfocado en contenido visual, branding y edición de video.
+                Manejo herramientas como Premiere, After Effects, Photoshop e Illustrator.
+            </p>
+            <a href="sobremi.html" class="btn-sobre">Ver más</a>
+        </div>
+
+        <div class="imagen">
+            <img src="img/yo.jpeg" alt="Julian Murgic">
+        </div>
+
+    </div>
+
+</section>
+
+  <!-- PROYECTOS -->
+<div class="cards">
+
+  <!-- CARD 1 -->
+  <div class="card">
+    <img src="img/logotodoalacarta.png" alt="Todoalacarta">
+    
+    <div class="card-content">
+      <h3>Todo a la carta</h3>
+      <p>Branding para programa de streaming.</p>
+      <a href="proyectos.html" class="link"></a>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="card">
+    <img src="https://via.placeholder.com/600x400" alt="Proyecto 2">
+    
+    <div class="card-content">
+      <h3>Proyecto 2</h3>
+      <p>Branding creativo con identidad visual fuerte y moderna.</p>
+      <a href="proyecto2.html" class="link"></a>
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="card">
+    <img src="https://via.placeholder.com/600x400" alt="Proyecto 3">
+    
+    <div class="card-content">
+      <h3>Proyecto 3</h3>
+      <p>Desarrollo web con enfoque visual tipo agencia creativa.</p>
+      <a href="proyecto3.html" class="link"></a>
+    </div>
+  </div>
+
+</div>
+
+  <!-- CONTACTO -->
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+    <section class="form-container">
+        <h2>Contacto</h2>
+
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+  
+    <section id="contacto" class="section text-center">
+    <article class="container">
+      <h2 class="section-title">Contacto</h2>
+      <p>Email: julimurgic@email.com</p>
+      <p>Instagram: @julimurgic</p>
+    </article>
+  </section>
+</body>
+
+
+  <!-- FOOTER -->
+        <footer class="text-center py-3 bg-dark text-white">
+            <small>Copyright © 2026 julianmurgic | Todos los derechos reservados.</small>
+        </footer>     
+</html>
