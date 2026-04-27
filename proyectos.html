@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-..." rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio Julian Murgic</title>
   </head>
   
-  <body class="overflow">
 <!--navbar-->
 <nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
@@ -47,83 +48,1031 @@
   </div>
 </nav>
 
-<section class="galeria">
 
-    <h2>Mis Trabajos</h2>
+<body class="pagina-proyectos">
+    <section class="proyectos-section">
+      <div class="container">
 
-    <div class="grid">
+        <h1 class="titulo-proyectos">PROYECTOS</h1>
 
-        <div class="card">
-            <img src="img/trabajo1.jpg" alt="Trabajo 1">
-            <div class="info">
-                <h3>Proyecto 1</h3>
-                <a href="#" class="btn">Ver más</a>
-            </div>
+        <div class="row g-4 grilla-proyectos">
+
+          <!-- 1. MODELADO 3D -->
+          <div class="col-12 col-lg-6">
+            <article class="card tarjeta-proyecto">
+              <div class="imagen-proyecto">
+                <img src="./images/Proyectos/Modelado3d.png" alt="Vista previa de Modelado 3D" class="foto-proyecto">
+
+                <div class="overlay-proyecto">
+                  <div class="contenido-proyecto">
+                    <div class="texto-proyecto">
+                      <h2 class="nombre-proyecto">MODELADO 3D</h2>
+
+                      <div class="etiquetas-proyecto">
+                        <span class="badge rounded-pill etiqueta-proyecto">Blender</span>
+                        <span class="badge rounded-pill etiqueta-proyecto">Animación</span>
+                      </div>
+                    </div>
+
+                    <button
+                      type="button"
+                      class="btn boton-proyecto"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalModelado3d"
+                    >
+                      Ver más
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- 2. REDES SOCIALES -->
+          <div class="col-12 col-lg-6">
+            <article class="card tarjeta-proyecto">
+              <div class="imagen-proyecto">
+                <img src="./images/Proyectos/RedesSocialesPortada.png" alt="Vista previa de Redes Sociales" class="foto-proyecto">
+
+                <div class="overlay-proyecto">
+                  <div class="contenido-proyecto">
+                    <div class="texto-proyecto">
+                      <h2 class="nombre-proyecto">REDES SOCIALES</h2>
+
+                      <div class="etiquetas-proyecto">
+                        <span class="badge rounded-pill etiqueta-proyecto">Audiovisual</span>
+                        <span class="badge rounded-pill etiqueta-proyecto">Marketing</span>
+                      </div>
+                    </div>
+
+                    <button
+                      type="button"
+                      class="btn boton-proyecto"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalRedesSociales"
+                    >
+                      Ver más
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- 3. POSTPRODUCCIÓN I -->
+          <div class="col-12 col-lg-6">
+            <article class="card tarjeta-proyecto">
+              <div class="imagen-proyecto">
+                <img src="./images/Proyectos/PostProduccionI.png" alt="Vista previa de Postproducción I" class="foto-proyecto">
+
+                <div class="overlay-proyecto">
+                  <div class="contenido-proyecto">
+                    <div class="texto-proyecto">
+                      <h2 class="nombre-proyecto">POSTPRODUCCIÓN I</h2>
+
+                      <div class="etiquetas-proyecto">
+                        <span class="badge rounded-pill etiqueta-proyecto">Guión</span>
+                        <span class="badge rounded-pill etiqueta-proyecto">Codirección</span>
+                      </div>
+                    </div>
+
+                    <button
+                      type="button"
+                      class="btn boton-proyecto"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalPostproduccion1"
+                    >
+                      Ver más
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- 4. POSTPRODUCCIÓN II -->
+          <div class="col-12 col-lg-6">
+            <article class="card tarjeta-proyecto">
+              <div class="imagen-proyecto">
+                <img src="./images/Proyectos/PostProduccionII.png" alt="Vista previa de Postproducción II" class="foto-proyecto">
+
+                <div class="overlay-proyecto">
+                  <div class="contenido-proyecto">
+                    <div class="texto-proyecto">
+                      <h2 class="nombre-proyecto">POSTPRODUCCIÓN II</h2>
+
+                      <div class="etiquetas-proyecto">
+                        <span class="badge rounded-pill etiqueta-proyecto">Premiere Pro</span>
+                        <span class="badge rounded-pill etiqueta-proyecto">Guión</span>
+                      </div>
+                    </div>
+
+                    <button
+                      type="button"
+                      class="btn boton-proyecto"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalPostproduccion2"
+                    >
+                      Ver más
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- 5. DISEÑO WEB Y MOBILE -->
+          <div class="col-12 col-lg-6">
+            <article class="card tarjeta-proyecto">
+              <div class="imagen-proyecto">
+                <img src="./images/Proyectos/DiseñoWeb.png" alt="Vista previa de Diseño Web y Mobile" class="foto-proyecto">
+
+                <div class="overlay-proyecto">
+                  <div class="contenido-proyecto">
+                    <div class="texto-proyecto">
+                      <h2 class="nombre-proyecto">DISEÑO WEB Y MOBILE</h2>
+
+                      <div class="etiquetas-proyecto">
+                        <span class="badge rounded-pill etiqueta-proyecto">Figma</span>
+                        <span class="badge rounded-pill etiqueta-proyecto">Responsive</span>
+                      </div>
+                    </div>
+
+                    <button
+                      type="button"
+                      class="btn boton-proyecto"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalDisenoWebMobile"
+                    >
+                      Ver más
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- 6. DISEÑO UX/UI -->
+          <div class="col-12 col-lg-6">
+            <article class="card tarjeta-proyecto">
+              <div class="imagen-proyecto">
+                <img src="./images/Proyectos/DiseñoUXUI.jpeg" alt="Vista previa de Diseño UX/UI" class="foto-proyecto">
+
+                <div class="overlay-proyecto">
+                  <div class="contenido-proyecto">
+                    <div class="texto-proyecto">
+                      <h2 class="nombre-proyecto">DISEÑO UX/UI</h2>
+
+                      <div class="etiquetas-proyecto">
+                        <span class="badge rounded-pill etiqueta-proyecto">Figma</span>
+                        <span class="badge rounded-pill etiqueta-proyecto">Mobile</span>
+                      </div>
+                    </div>
+
+                    <button
+                      type="button"
+                      class="btn boton-proyecto"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalDisenoUxUi"
+                    >
+                      Ver más
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
         </div>
+      </div>
+    </section>
+  </main>
 
-        <div class="card">
-            <img src="img/trabajo2.jpg" alt="Trabajo 2">
-            <div class="info">
-                <h3>Proyecto 2</h3>
-                <a href="#" class="btn">Ver más</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="img/trabajo3.jpg" alt="Trabajo 3">
-            <div class="info">
-                <h3>Proyecto 3</h3>
-                <a href="#" class="btn">Ver más</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="img/trabajo4.jpg" alt="Trabajo 4">
-            <div class="info">
-                <h3>Proyecto 4</h3>
-                <a href="#" class="btn">Ver más</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="img/trabajo5.jpg" alt="Trabajo 5">
-            <div class="info">
-                <h3>Proyecto 5</h3>
-                <a href="#" class="btn">Ver más</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="img/trabajo6.jpg" alt="Trabajo 6">
-            <div class="info">
-                <h3>Proyecto 6</h3>
-                <a href="#" class="btn">Ver más</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="img/trabajo7.jpg" alt="Trabajo 7">
-            <div class="info">
-                <h3>Proyecto 7</h3>
-                <a href="#" class="btn">Ver más</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="img/trabajo8.jpg" alt="Trabajo 8">
-            <div class="info">
-                <h3>Proyecto 8</h3>
-                <a href="#" class="btn">Ver más</a>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-  <!-- FOOTER -->
+    <!-- FOOTER -->
         <footer class="text-center py-3 bg-dark text-white">
-            <small>© 2026 JulianMurgic</small>
-        </footer>     
+            <small>Copyright © 2026 julianmurgic | Todos los derechos reservados.</small>
+        </footer>  
+  
+  <!-- MODAL MODELADO 3D -->
+  <div class="modal fade modal-modelado3d" id="modalModelado3d" tabindex="-1" aria-labelledby="tituloModalModelado3d" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content contenido-modal-modelado">
+        <button type="button" class="cerrar-modal-modelado" data-bs-dismiss="modal" aria-label="Cerrar modal">
+          &times;
+        </button>
+
+        <div id="carruselModelado3d" class="carousel slide" data-bs-interval="false">
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="slide-modelado slide-info-modelado">
+                <div class="slide-modelado-grid">
+                  <div class="info-modelado">
+                    <h2 class="titulo-modal-modelado" id="tituloModalModelado3d">MISTERY SHACK</h2>
+                    <p class="subtitulo-modal-modelado">Modelado 3D · 4° cuatrimestre</p>
+
+                    <div class="descripcion-desktop-tecnica">
+                      <p class="texto-modal-modelado">
+                        Proyecto realizado para la materia Modelado 3D durante el cuarto cuatrimestre de la carrera. Se desarrolló la recreación de una habitación de la “Mystery Shack”, inspirada en la cabaña de la serie Gravity Falls. Todos los objetos de la escena fueron modelados desde cero, aplicando también texturas, organización espacial, iluminación y puesta de cámara.
+                      </p>
+                    </div>
+
+                    <button
+                      class="btn boton-descripcion-tecnica"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#descripcionModelado3dMobile"
+                      aria-expanded="false"
+                      aria-controls="descripcionModelado3dMobile"
+                    >
+                      Descripción técnica
+                    </button>
+
+                    <div class="collapse descripcion-mobile-tecnica" id="descripcionModelado3dMobile">
+                      <div class="caja-descripcion-mobile">
+                        <p class="texto-modal-modelado">
+                          Proyecto realizado para la materia Modelado 3D durante el cuarto cuatrimestre de la carrera. Se desarrolló la recreación de una habitación de la “Mystery Shack”, inspirada en la cabaña de la serie Gravity Falls. Todos los objetos de la escena fueron modelados desde cero, aplicando también texturas, organización espacial, iluminación y puesta de cámara.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="visual-modelado">
+                    <div class="imagen-modal-modelado-box">
+                      <img src="./images/Proyectos/Modelado3d.png" alt="Render principal del proyecto Mistery Shack" class="imagen-modal-modelado">
+                    </div>
+
+                    <p class="caption-modal-modelado">render/vista principal de la imagen</p>
+
+                    <div class="badges-modal-modelado">
+                      <span class="badge etiqueta-modal-modelado">Blender</span>
+                      <span class="badge etiqueta-modal-modelado">Premiere Pro</span>
+                      <span class="badge etiqueta-modal-modelado">Modelado 3D</span>
+                      <span class="badge etiqueta-modal-modelado">Texturizado</span>
+                      <span class="badge etiqueta-modal-modelado">Iluminación</span>
+                      <span class="badge etiqueta-modal-modelado">Animación</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="slide-modelado slide-video-modelado">
+                <div class="video-modelado-embed-box">
+                  <iframe
+                    class="iframe-video-modelado"
+                    src="https://www.youtube.com/embed/nMBZfVnN2tE?si=9jmhBROA-HsuMz1p"
+                    title="Video del proyecto Modelado 3D"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev control-modelado prev-modelado" type="button" data-bs-target="#carruselModelado3d" data-bs-slide="prev" aria-label="Slide anterior">
+            <span class="flecha-modelado">&lt;</span>
+          </button>
+
+          <button class="carousel-control-next control-modelado next-modelado" type="button" data-bs-target="#carruselModelado3d" data-bs-slide="next" aria-label="Slide siguiente">
+            <span class="flecha-modelado">&gt;</span>
+          </button>
+
+          <div class="carousel-indicators indicadores-modelado">
+            <button type="button" data-bs-target="#carruselModelado3d" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carruselModelado3d" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL REDES SOCIALES -->
+  <div class="modal fade modal-redes-sociales" id="modalRedesSociales" tabindex="-1" aria-labelledby="tituloModalRedesSociales" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content contenido-modal-modelado">
+        <button type="button" class="cerrar-modal-modelado" data-bs-dismiss="modal" aria-label="Cerrar modal">
+          &times;
+        </button>
+
+        <div id="carruselRedesSociales" class="carousel slide" data-bs-interval="false">
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="slide-modelado slide-info-modelado">
+                <div class="slide-modelado-grid">
+                  <div class="info-modelado">
+                    <h2 class="titulo-modal-modelado" id="tituloModalRedesSociales">REDES SOCIALES</h2>
+                    <p class="subtitulo-modal-modelado">Diseño gráfico · Edición de video</p>
+
+                    <div class="descripcion-desktop-tecnica">
+                      <p class="texto-modal-modelado">
+                        Realicé trabajos vinculados a la creación de contenidos para redes sociales, tanto en la facultad como fuera de ella. Trabajé para cuentas de distintos rubros, como fútbol, medicina y gastronomía, desarrollando piezas visuales pensadas para comunicar de forma clara y atractiva.
+                      </p>
+
+                      <p class="texto-modal-modelado">
+                        Mi trabajo estuvo enfocado en diseño gráfico, edición de fotos y edición de reels. En algunos proyectos también participé en la idea del contenido, especialmente en propuestas audiovisuales como reels de entrevistas.
+                      </p>
+
+                      <p class="texto-modal-modelado">
+                        Los contenidos realizados incluyen sistemas visuales, posteos, carruseles y piezas para redes, siempre buscando resolver cada trabajo de la mejor manera posible a partir del material disponible.
+                      </p>
+                    </div>
+
+                    <button
+                      class="btn boton-descripcion-tecnica"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#descripcionRedesSocialesMobile"
+                      aria-expanded="false"
+                      aria-controls="descripcionRedesSocialesMobile"
+                    >
+                      Descripción técnica
+                    </button>
+
+                    <div class="collapse descripcion-mobile-tecnica" id="descripcionRedesSocialesMobile">
+                      <div class="caja-descripcion-mobile">
+                        <p class="texto-modal-modelado">
+                          Realicé trabajos vinculados a la creación de contenidos para redes sociales, tanto en la facultad como fuera de ella. Trabajé para cuentas de distintos rubros, como fútbol, medicina y gastronomía, desarrollando piezas visuales pensadas para comunicar de forma clara y atractiva.
+                        </p>
+
+                        <p class="texto-modal-modelado">
+                          Mi trabajo estuvo enfocado en diseño gráfico, edición de fotos y edición de reels. En algunos proyectos también participé en la idea del contenido, especialmente en propuestas audiovisuales como reels de entrevistas.
+                        </p>
+
+                        <p class="texto-modal-modelado">
+                          Los contenidos realizados incluyen sistemas visuales, posteos, carruseles y piezas para redes, siempre buscando resolver cada trabajo de la mejor manera posible a partir del material disponible.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="visual-modelado">
+                    <div class="imagen-modal-modelado-box">
+                      <img src="./images/Proyectos/RedesSocialesMiniatura.png" alt="Piezas visuales para redes sociales" class="imagen-modal-modelado">
+                    </div>
+
+                    <p class="caption-modal-modelado">Piezas visuales para redes sociales</p>
+
+                    <div class="badges-modal-modelado">
+                      <span class="badge etiqueta-modal-modelado">Diseño</span>
+                      <span class="badge etiqueta-modal-modelado">Marketing</span>
+                      <span class="badge etiqueta-modal-modelado">Edición</span>
+                      <span class="badge etiqueta-modal-modelado">Adobe Illustrator</span>
+                      <span class="badge etiqueta-modal-modelado">Adobe Photoshop</span>
+                      <span class="badge etiqueta-modal-modelado">Premiere Pro</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="slide-modelado slide-video-modelado">
+                <div class="video-modelado-embed-box">
+                  <iframe
+                    class="iframe-video-modelado"
+                    src="https://youtube.com/embed/2GoJ1-Sp78M?si=p5csfKLvaMPu4kJw"
+                    title="Ciao Futsal"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="slide-modelado slide-video-modelado">
+                <div class="video-modelado-embed-box">
+                  <iframe
+                    class="iframe-video-modelado"
+                    src="https://www.youtube.com/embed/762Gpx9nk_U"
+                    title="Brisas de Liniers"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+              <div class="slide-modelado slide-video-modelado">
+                <div class="video-modelado-embed-box">
+                  <iframe
+                    class="iframe-video-modelado"
+                    src="https://www.youtube.com/embed/s0E10tq3M5Q"
+                    title="Medicina"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="carousel-item">
+              <div class="slide-modelado slide-video-modelado">
+                <div class="video-modelado-embed-box">
+                  <iframe
+                    class="iframe-video-modelado"
+                    src="https://www.youtube.com/embed/SDxMkTimq-Q?si=7ZB8WpLKDE_ETYkj"
+                    title="Publicidad Facultad"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="carousel-item">
+              <div class="slide-modelado slide-video-modelado">
+                <div class="video-modelado-embed-box">
+                  <iframe
+                    class="iframe-video-modelado"
+                    src="https://www.youtube.com/embed/jJOE7ApCWCY"
+                    title="Casa de Galicia"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev control-modelado prev-modelado" type="button" data-bs-target="#carruselRedesSociales" data-bs-slide="prev" aria-label="Slide anterior">
+            <span class="flecha-modelado">&lt;</span>
+          </button>
+
+          <button class="carousel-control-next control-modelado next-modelado" type="button" data-bs-target="#carruselRedesSociales" data-bs-slide="next" aria-label="Slide siguiente">
+            <span class="flecha-modelado">&gt;</span>
+          </button>
+
+          <div class="carousel-indicators indicadores-modelado">
+            <button type="button" data-bs-target="#carruselRedesSociales" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carruselRedesSociales" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carruselRedesSociales" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carruselRedesSociales" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carruselRedesSociales" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carruselRedesSociales" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL POSTPRODUCCIÓN I -->
+  <div class="modal fade modal-postproduccion1 modal-modelado3d" id="modalPostproduccion1" tabindex="-1" aria-labelledby="tituloModalPostproduccion1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content contenido-modal-modelado">
+        <button type="button" class="cerrar-modal-modelado" data-bs-dismiss="modal" aria-label="Cerrar modal">
+          &times;
+        </button>
+
+        <div id="carruselPostproduccion1" class="carousel slide" data-bs-interval="false">
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="slide-modelado slide-info-modelado">
+                <div class="slide-modelado-grid">
+                  <div class="info-modelado">
+                    <h2 class="titulo-modal-modelado" id="tituloModalPostproduccion1">TRAILER BURBUJA</h2>
+                    <p class="subtitulo-modal-modelado">PostProducción · 3er Cuatrimestre</p>
+
+                    <div class="descripcion-desktop-tecnica">
+                      <p class="texto-modal-modelado">
+                        Trabajo realizado para la facultad, centrado en la creación de un trailer alternativo para el documental Burbuja, dirigido por Pablo Stigliani.
+                      </p>
+
+                      <p class="texto-modal-modelado">
+                        Mi participación estuvo enfocada en el guion y la planificación del trailer, trabajando junto a Ramiro Unrein y Franco Fusco en la coordinación del grupo.
+                      </p>
+
+                      <p class="texto-modal-modelado">
+                        El objetivo fue construir una pieza breve, clara y atractiva que reinterpretara el material original y funcionara como propuesta audiovisual.
+                      </p>
+                    </div>
+
+                    <button
+                      class="btn boton-descripcion-tecnica"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#descripcionPostproduccion1Mobile"
+                      aria-expanded="false"
+                      aria-controls="descripcionPostproduccion1Mobile"
+                    >
+                      Descripción técnica
+                    </button>
+
+                    <div class="collapse descripcion-mobile-tecnica" id="descripcionPostproduccion1Mobile">
+                      <div class="caja-descripcion-mobile">
+                        <p class="texto-modal-modelado">
+                          Trabajo realizado para la facultad, centrado en la creación de un trailer alternativo para el documental Burbuja, dirigido por Pablo Stigliani.
+                        </p>
+
+                        <p class="texto-modal-modelado">
+                          Mi participación estuvo enfocada en el guion y la planificación del trailer, trabajando junto a Ramiro Unrein y Franco Fusco en la coordinación del grupo.
+                        </p>
+
+                        <p class="texto-modal-modelado">
+                          El objetivo fue construir una pieza breve, clara y atractiva que reinterpretara el material original y funcionara como propuesta audiovisual.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="visual-modelado">
+                    <div class="imagen-modal-modelado-box">
+                      <img src="./images/Proyectos/PostProduccionIMiniatura.jpg" alt="Frame del trailer alternativo Burbuja" class="imagen-modal-modelado">
+                    </div>
+
+                    <p class="caption-modal-modelado">Frame del trailer alternativo</p>
+
+                    <div class="badges-modal-modelado">
+                      <span class="badge etiqueta-modal-modelado">Coordinación</span>
+                      <span class="badge etiqueta-modal-modelado">Guión</span>
+                      <span class="badge etiqueta-modal-modelado">Planificación</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="slide-modelado slide-video-modelado">
+                <div class="aviso-youtube-box">
+                  <p class="texto-aviso-youtube">
+                    Por cuestiones de derechos de autor, este video debe visualizarse directamente en YouTube.
+                  </p>
+
+                  <a
+                    href="https://www.youtube.com/watch?v=LAT4pqP3vTc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn boton-youtube-externo"
+                  >
+                    Ver en YouTube
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev control-modelado prev-modelado" type="button" data-bs-target="#carruselPostproduccion1" data-bs-slide="prev" aria-label="Slide anterior">
+            <span class="flecha-modelado">&lt;</span>
+          </button>
+
+          <button class="carousel-control-next control-modelado next-modelado" type="button" data-bs-target="#carruselPostproduccion1" data-bs-slide="next" aria-label="Slide siguiente">
+            <span class="flecha-modelado">&gt;</span>
+          </button>
+
+          <div class="carousel-indicators indicadores-modelado">
+            <button type="button" data-bs-target="#carruselPostproduccion1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carruselPostproduccion1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL POSTPRODUCCIÓN II -->
+  <div class="modal fade modal-postproduccion2 modal-modelado3d" id="modalPostproduccion2" tabindex="-1" aria-labelledby="tituloModalPostproduccion2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content contenido-modal-modelado">
+        <button type="button" class="cerrar-modal-modelado" data-bs-dismiss="modal" aria-label="Cerrar modal">
+          &times;
+        </button>
+
+        <div id="carruselPostproduccion2" class="carousel slide" data-bs-interval="false">
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="slide-modelado slide-info-modelado">
+                <div class="slide-modelado-grid">
+                  <div class="info-modelado">
+                    <h2 class="titulo-modal-modelado" id="tituloModalPostproduccion2">DÍAS DE TEMPORADA</h2>
+                    <p class="subtitulo-modal-modelado">PostProducción · 3er Cuatrimestre</p>
+
+                    <div class="descripcion-desktop-tecnica">
+                      <p class="texto-modal-modelado">
+                        Trabajo realizado para la facultad, centrado en la re-edición del documental Días de Temporada, dirigido por Pablo Stigliani.
+                      </p>
+
+                      <p class="texto-modal-modelado">
+                        Mi participación estuvo enfocada en el guio, la edición y la coordinación del grupo, trabajando junto a Ramiro Unrein y Franco Fusco.
+                      </p>
+
+                      <p class="texto-modal-modelado">
+                        Además, desarrollamos un trailer alternativo como pieza complementaria, buscando reinterpretar el material original desde una nueva propuesta audiovisual.
+                      </p>
+                    </div>
+
+                    <button
+                      class="btn boton-descripcion-tecnica"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#descripcionPostproduccion2Mobile"
+                      aria-expanded="false"
+                      aria-controls="descripcionPostproduccion2Mobile"
+                    >
+                      Descripción técnica
+                    </button>
+
+                    <div class="collapse descripcion-mobile-tecnica" id="descripcionPostproduccion2Mobile">
+                      <div class="caja-descripcion-mobile">
+                        <p class="texto-modal-modelado">
+                          Trabajo realizado para la facultad, centrado en la re-edición del documental Días de Temporada, dirigido por Pablo Stigliani.
+                        </p>
+
+                        <p class="texto-modal-modelado">
+                          Mi participación estuvo enfocada en el guio, la edición y la coordinación del grupo, trabajando junto a Ramiro Unrein y Franco Fusco.
+                        </p>
+
+                        <p class="texto-modal-modelado">
+                          Además, desarrollamos un trailer alternativo como pieza complementaria, buscando reinterpretar el material original desde una nueva propuesta audiovisual.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="visual-modelado">
+                    <div class="imagen-modal-modelado-box">
+                      <img src="./images/Proyectos/PostProduccionII.png" alt="Frame del documental alternativo Días de Temporada" class="imagen-modal-modelado">
+                    </div>
+
+                    <p class="caption-modal-modelado">Frame del Documental alternativo</p>
+
+                    <div class="badges-modal-modelado">
+                      <span class="badge etiqueta-modal-modelado">Coordinación</span>
+                      <span class="badge etiqueta-modal-modelado">Guión</span>
+                      <span class="badge etiqueta-modal-modelado">Edición</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="slide-modelado slide-video-modelado">
+                <div class="aviso-youtube-box">
+                  <p class="texto-aviso-youtube">
+                    Por cuestiones de derechos de autor, este video debe visualizarse directamente en YouTube.
+                  </p>
+
+                  <a
+                    href="https://www.youtube.com/watch?v=utOa64eKvL8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn boton-youtube-externo"
+                  >
+                    Ver en YouTube
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev control-modelado prev-modelado" type="button" data-bs-target="#carruselPostproduccion2" data-bs-slide="prev" aria-label="Slide anterior">
+            <span class="flecha-modelado">&lt;</span>
+          </button>
+
+          <button class="carousel-control-next control-modelado next-modelado" type="button" data-bs-target="#carruselPostproduccion2" data-bs-slide="next" aria-label="Slide siguiente">
+            <span class="flecha-modelado">&gt;</span>
+          </button>
+
+          <div class="carousel-indicators indicadores-modelado">
+            <button type="button" data-bs-target="#carruselPostproduccion2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carruselPostproduccion2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL DISEÑO WEB Y MOBILE -->
+  <div class="modal fade modal-diseno-web-mobile modal-modelado3d" id="modalDisenoWebMobile" tabindex="-1" aria-labelledby="tituloModalDisenoWebMobile" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content contenido-modal-modelado">
+        <button type="button" class="cerrar-modal-modelado" data-bs-dismiss="modal" aria-label="Cerrar modal">
+          &times;
+        </button>
+
+        <div id="carruselDisenoWebMobile" class="carousel slide" data-bs-interval="false">
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="slide-modelado slide-info-modelado">
+                <div class="slide-modelado-grid">
+                  <div class="info-modelado">
+                    <h2 class="titulo-modal-modelado" id="tituloModalDisenoWebMobile">WEB TRUENO</h2>
+                    <p class="subtitulo-modal-modelado">Diseño Web y Mobile · 3er Cuatrimestre</p>
+
+                    <div class="descripcion-desktop-tecnica">
+                      <p class="texto-modal-modelado">
+                        Trabajo realizado para la facultad, centrado en el diseño de una web y su versión mobile para el artista Trueno, tomando como eje visual la temática de su álbum Bien o Mal.
+                      </p>
+
+                      <p class="texto-modal-modelado">
+                        El proceso incluyó la creación de un sistema visual, el armado del prototipo y la adaptación responsive para celular.
+                      </p>
+
+                      <p class="texto-modal-modelado">
+                        El trabajo fue desarrollado junto a Franco Fusco y Ramiro Unrein, y mi participación estuvo enfocada en el diseño de la interfaz y en el desarrollo de la propuesta interactiva.
+                      </p>
+                    </div>
+
+                    <button
+                      class="btn boton-descripcion-tecnica"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#descripcionDisenoWebMobile"
+                      aria-expanded="false"
+                      aria-controls="descripcionDisenoWebMobile"
+                    >
+                      Descripción técnica
+                    </button>
+
+                    <div class="collapse descripcion-mobile-tecnica" id="descripcionDisenoWebMobile">
+                      <div class="caja-descripcion-mobile">
+                        <p class="texto-modal-modelado">
+                          Trabajo realizado para la facultad, centrado en el diseño de una web y su versión mobile para el artista Trueno, tomando como eje visual la temática de su álbum Bien o Mal.
+                        </p>
+
+                        <p class="texto-modal-modelado">
+                          El proceso incluyó la creación de un sistema visual, el armado del prototipo y la adaptación responsive para celular.
+                        </p>
+
+                        <p class="texto-modal-modelado">
+                          El trabajo fue desarrollado junto a Franco Fusco y Ramiro Unrein, y mi participación estuvo enfocada en el diseño de la interfaz y en el desarrollo de la propuesta interactiva.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="visual-modelado">
+                    <div class="imagen-modal-modelado-box">
+                      <img src="./images/Proyectos/DiseñoWeb.png" alt="Vista de la web y versión mobile de Trueno" class="imagen-modal-modelado">
+                    </div>
+
+                    <p class="caption-modal-modelado">Vista de la web y versión mobile</p>
+
+                    <div class="badges-modal-modelado">
+                      <span class="badge etiqueta-modal-modelado">Diseño Web</span>
+                      <span class="badge etiqueta-modal-modelado">Diseño Mobile</span>
+                      <span class="badge etiqueta-modal-modelado">Responsive</span>
+                      <span class="badge etiqueta-modal-modelado">Figma</span>
+                      <span class="badge etiqueta-modal-modelado">Sistema Visual</span>
+                      <span class="badge etiqueta-modal-modelado">Prototipo</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="slide-modelado slide-video-modelado">
+                <div class="figma-embed-box">
+                  <iframe
+                    class="iframe-figma-modelado"
+                    data-src="https://embed.figma.com/proto/W9W2TOxTqG2MM3KlCUImPv/Pagina-web---Trueno?node-id=115-315&starting-point-node-id=115%3A315&embed-host=share"
+                    title="Frame de Figma 1 del proyecto Diseño Web y Mobile"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="slide-modelado slide-video-modelado">
+                <div class="figma-embed-box">
+                  <iframe
+                    class="iframe-figma-modelado"
+                    data-src="https://embed.figma.com/proto/W9W2TOxTqG2MM3KlCUImPv/Pagina-web---Trueno?node-id=306-208&starting-point-node-id=306%3A208&embed-host=share"
+                    title="Frame de Figma 2 del proyecto Diseño Web y Mobile"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev control-modelado prev-modelado" type="button" data-bs-target="#carruselDisenoWebMobile" data-bs-slide="prev" aria-label="Slide anterior">
+            <span class="flecha-modelado">&lt;</span>
+          </button>
+
+          <button class="carousel-control-next control-modelado next-modelado" type="button" data-bs-target="#carruselDisenoWebMobile" data-bs-slide="next" aria-label="Slide siguiente">
+            <span class="flecha-modelado">&gt;</span>
+          </button>
+
+          <div class="carousel-indicators indicadores-modelado">
+            <button type="button" data-bs-target="#carruselDisenoWebMobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carruselDisenoWebMobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carruselDisenoWebMobile" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL DISEÑO UX/UI -->
+  <div class="modal fade modal-diseno-ux-ui modal-modelado3d" id="modalDisenoUxUi" tabindex="-1" aria-labelledby="tituloModalDisenoUxUi" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content contenido-modal-modelado">
+        <button type="button" class="cerrar-modal-modelado" data-bs-dismiss="modal" aria-label="Cerrar modal">
+          &times;
+        </button>
+
+        <div id="carruselDisenoUxUi" class="carousel slide" data-bs-interval="false">
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="slide-modelado slide-info-modelado">
+                <div class="slide-modelado-grid">
+                  <div class="info-modelado">
+                    <h2 class="titulo-modal-modelado" id="tituloModalDisenoUxUi">BOSTERO SOY</h2>
+                    <p class="subtitulo-modal-modelado">Diseño UX/UI · 3er Cuatrimestre</p>
+
+                    <div class="descripcion-desktop-tecnica">
+                      <p class="texto-modal-modelado">
+                        Trabajo realizado para la facultad, centrado en el diseño de la app Bostero Soy, pensada para reunir en un solo lugar distintas funciones y contenidos de interés para el hincha de Boca.
+                      </p>
+
+                      <p class="texto-modal-modelado">
+                        El proyecto fue desarrollado en grupo junto a Ramiro Unrein y Franco Fusco.
+                      </p>
+
+                      <p class="texto-modal-modelado">
+                        Mi participación estuvo enfocada en la investigación previa, el diseño UX/UI y el desarrollo de la simulación interactiva en Figma.
+                      </p>
+                    </div>
+
+                    <button
+                      class="btn boton-descripcion-tecnica"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#descripcionDisenoUxUiMobile"
+                      aria-expanded="false"
+                      aria-controls="descripcionDisenoUxUiMobile"
+                    >
+                      Descripción técnica
+                    </button>
+
+                    <div class="collapse descripcion-mobile-tecnica" id="descripcionDisenoUxUiMobile">
+                      <div class="caja-descripcion-mobile">
+                        <p class="texto-modal-modelado">
+                          Trabajo realizado para la facultad, centrado en el diseño de la app Bostero Soy, pensada para reunir en un solo lugar distintas funciones y contenidos de interés para el hincha de Boca.
+                        </p>
+
+                        <p class="texto-modal-modelado">
+                          El proyecto fue desarrollado en grupo junto a Ramiro Unrein y Franco Fusco.
+                        </p>
+
+                        <p class="texto-modal-modelado">
+                          Mi participación estuvo enfocada en la investigación previa, el diseño UX/UI y el desarrollo de la simulación interactiva en Figma.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="visual-modelado">
+                    <div class="imagen-modal-modelado-box">
+                      <img src="./images/Proyectos/DiseñoUXUI.jpeg" alt="Vista del mockup mobile de Bostero Soy" class="imagen-modal-modelado">
+                    </div>
+
+                    <p class="caption-modal-modelado">Vista del mockup mobile</p>
+
+                    <div class="badges-modal-modelado">
+                      <span class="badge etiqueta-modal-modelado">UX/UI</span>
+                      <span class="badge etiqueta-modal-modelado">App Design</span>
+                      <span class="badge etiqueta-modal-modelado">Figma</span>
+                      <span class="badge etiqueta-modal-modelado">Investigación</span>
+                      <span class="badge etiqueta-modal-modelado">Prototipo</span>
+                      <span class="badge etiqueta-modal-modelado">Mobile</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="slide-modelado slide-video-modelado">
+                <div class="figma-embed-box">
+                 <iframe
+                    class="iframe-figma-modelado"
+                    data-src="https://embed.figma.com/proto/NteqBw3p2KgP0CkczzE7QA/BosteroSoy?node-id=2-2&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=105%3A11&embed-host=share"
+                    title="Frame de Figma del proyecto Diseño UX/UI"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev control-modelado prev-modelado" type="button" data-bs-target="#carruselDisenoUxUi" data-bs-slide="prev" aria-label="Slide anterior">
+            <span class="flecha-modelado">&lt;</span>
+          </button>
+
+          <button class="carousel-control-next control-modelado next-modelado" type="button" data-bs-target="#carruselDisenoUxUi" data-bs-slide="next" aria-label="Slide siguiente">
+            <span class="flecha-modelado">&gt;</span>
+          </button>
+
+          <div class="carousel-indicators indicadores-modelado">
+            <button type="button" data-bs-target="#carruselDisenoUxUi" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carruselDisenoUxUi" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const modalesConIframe = [
+    "modalModelado3d",
+    "modalRedesSociales",
+    "modalDisenoWebMobile",
+    "modalDisenoUxUi"
+  ];
+
+  modalesConIframe.forEach((idModal) => {
+    const modal = document.getElementById(idModal);
+
+    if (!modal) return;
+
+    modal.addEventListener("hidden.bs.modal", function () {
+      const iframes = modal.querySelectorAll("iframe");
+
+      iframes.forEach((iframe) => {
+        iframe.src = iframe.src;
+      });
+    });
+  });
+</script>
+
+<script>
+  function cargarIframeVisible(slide) {
+    const iframe = slide.querySelector(".iframe-figma-modelado[data-src]");
+    if (iframe && !iframe.getAttribute("src")) {
+      iframe.setAttribute("src", iframe.dataset.src);
+    }
+  }
+
+  const carruselesConFigma = [
+    document.getElementById("carruselDisenoWebMobile"),
+    document.getElementById("carruselDisenoUxUi")
+  ];
+
+  carruselesConFigma.forEach((carrusel) => {
+    if (!carrusel) return;
+
+    const slideActivo = carrusel.querySelector(".carousel-item.active");
+    if (slideActivo) {
+      cargarIframeVisible(slideActivo);
+    }
+
+    carrusel.addEventListener("slid.bs.carousel", function (event) {
+      cargarIframeVisible(event.relatedTarget);
+    });
+  });
+
+  
+</script>
   </body>
 </html>
