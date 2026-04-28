@@ -18,7 +18,7 @@
 <!--navbar-->
 <nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Julian Murgic</a>
+    <a class="navbar-brand" href="index.html">Julian Murgic</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -52,7 +52,7 @@
     <section class="form-container">
         <h2>Contacto</h2>
 
-        <form class="contact-form">
+        <form class="contact-form" id="contactForm">
             <div class="form-group">
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
@@ -68,7 +68,12 @@
                 <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje..." required></textarea>
             </div>
 
-            <button type="submit" class="btn">Enviar</button>
+            <button type="submit" class="btn">Enviar
+            </button>
+            <p id="mensaje-exito" style="display:none; color: green; margin-top: 15px;">
+  Mensaje enviado correctamente ✔
+</p>
+            
         </form>
     </section>
   
@@ -84,6 +89,18 @@
   <!-- FOOTER -->
         <footer class="text-center py-3 bg-dark text-white">
             <small>Copyright © 2026 julianmurgic | Todos los derechos reservados.</small>
-        </footer>     
+        </footer> 
+  <script>
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // evita que se recargue la página
+
+    // simulamos envío
+    alert("✅ Mensaje enviado correctamente");
+
+    form.reset(); // limpia el formulario
+  });
+</script>    
   </body>
 </html>
